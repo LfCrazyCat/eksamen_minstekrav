@@ -8,6 +8,33 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Fontawesome -->
 </head>
 <body>
+  <header>
+    <!-- Søkefelt for nettsiden som skal være øverst på siden-->
+     <section class="search-bar">
+      <form action="search.html" method="get">
+        <input type="text" name="search" id="search" placeholder="Søk her..." aria-label="Søkefelt for nettsiden">
+        <button type="submit" aria-label="søk">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+     </section>
+    </header>
+
+   <!-- Navigasjons meny-->
+    <!-- Her er ikonene som profil, hjerte og handlevogn lagt til-->
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="product.html">Produkter</a></li>
+      <li class="logo"><a href="index.html">Logo</a></li>
+      <li><a href="#kategorier">Kategorier</a></li>
+      <li><a href="#contact">Kontakt oss</a></li>
+      <li><a href="#profile"><i class="fa-regular fa-user"></i></a></li>
+      <li><a href="#favorite"><i class="fa-regular fa-heart"></i></a></li>
+      <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
+  </nav>
+
   
 </body>
 </html>
