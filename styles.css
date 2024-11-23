@@ -1,3 +1,91 @@
+/* Globalt style for sidene */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header, footer, nav, main, section {
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for header */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f4f4f4;
+}
+
+/* Søkefelt */
+.search-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for navigasjonsmeny */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+nav ul li {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Style for falsk banner */
+.fake-banner {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+.fake-banner .banner-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+
 
 @media (min-width: 768px) {
   .fake-banner {
