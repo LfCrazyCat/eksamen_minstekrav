@@ -4,8 +4,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background-color: #fff;
+  color:#000;
 }
-
 
 a {
   text-decoration: none;
@@ -19,6 +20,7 @@ header, footer, nav, main, section {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 ul {
@@ -32,13 +34,14 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #f4f4f4;
+  background-color: #ccc;
 }
 
 /* Søkefelt */
 .search-bar {
   display: flex;
   gap: 5px;
+  align-items: center;
 }
 
 .search-bar input {
@@ -60,13 +63,42 @@ header {
 /* Style for navigasjonsmeny */
 nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   gap: 10px;
+  padding: 10px;
+  background-color:#f4f4f4;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin: 0;
 }
+
 nav ul li {
-  flex: 1 1 auto;
+  flex: 1;
   text-align: center;
+}
+
+nav ul li a {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: #000;
+  font-size: 14px;
+}
+
+nav ul li a i {
+  margin-bottom: 5px; 
+  font-size: 20px; 
+}
+
+nav ul li.logo {
+  flex: 2; /* Logoen får mer plass */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Style for falsk banner */
@@ -83,6 +115,7 @@ nav ul li {
   color: #000;
   border: 1px solid #000;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 /* Style for seksjon for populære produckter */
@@ -135,7 +168,7 @@ nav ul li {
 
 /* Style for footer-delen */
 footer {
-  background-color: #f4f4f4;
+  background-color: #ccc;
 }
 
 .footer-section {
