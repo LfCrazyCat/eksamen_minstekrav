@@ -345,9 +345,14 @@ footer {
 
 /* Style for pris */
 .product-info .price {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
   margin: 10px 0;
+}
+
+.bold-text {
+  font-weight: bold;
 }
 
 /* Style for produkt info */
@@ -368,14 +373,6 @@ footer {
 }
 
 
-
-
-.product-info .price {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-  margin: 10px 0;
-}
 
 .product-info p {
   margin: 5px 0;
