@@ -165,17 +165,39 @@ nav ul li.logo a {
 }
 
 /* Style for seksjonen for anmeldelser  */
+
+.reviews {
+  margin-top: 0px;
+}
+
 .review-card {
   display: flex;
-  align-items: flex-start;
-  gap: 15px;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 1px;
 }
 
 .review-card img {
-  max-width: 150px;
+  max-width: 100px;
+  height: auto;
   border-radius: 5px;
+}
+
+.review-card h3 {
+  font-size: 18px; 
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+}
+
+.review-card p {
+  font-size: 14px; 
+  text-align: justify; 
+  margin: 0; 
 }
 
 /* Style for footer-delen */
