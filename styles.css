@@ -297,9 +297,9 @@ footer {
 }
 
 .main-image {
-  margin-bottom: 20px; 
-  border: 2px solid #ccc; 
-  border-radius: 5px; 
+  max-width: 90%; 
+  border: 1px solid #fff;
+  border-radius: 5px;
 }
 
 .product-images {
@@ -311,27 +311,30 @@ footer {
 
 /* Produktbilder */
 .product-images img {
-  max-width: 100%;
+  max-width: 100%; 
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* style for miniatyrbilder */
 .thumbnail-images {
-  display: flex; 
-  flex-direction: column;
-  gap: 15px; 
-  justify-content: center;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  align-items: center
 }
 
 .thumbnail-images img {
-  max-width: 80%;
-  border: 1px solid #fff; 
-  padding: 5px; 
+  max-width: 100%; 
+  border: 1px solid #fff;
+  padding: 5px;
   border-radius: 5px;
 }
 
 /* Style for produktinfo */
 .product-info {
-  text-align: center;
+  text-align: left;
   padding: 10px;
 }
 
