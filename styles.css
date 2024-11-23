@@ -158,6 +158,16 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
+/* Produktbilder */
+.product-images img {
+  max-width: 100%;
+}
+/* Relaterte produkter- grid */
+.related-products .product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 
 @media (min-width: 768px) {
