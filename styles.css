@@ -186,6 +186,7 @@ footer {
     margin: 5px 0;
 }
 
+/* Personlig informasjon, bestilling, levering, betlaing */
 .personal-info input,
 .delivery-options input,
 .payment input {
