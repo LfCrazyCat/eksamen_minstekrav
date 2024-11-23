@@ -179,6 +179,23 @@ footer {
   border: 1px solid #ccc;
 }
 
+.personal-info label,
+.delivery-options label,
+.payment label {
+    display: block;
+    margin: 5px 0;
+}
+
+.personal-info input,
+.delivery-options input,
+.payment input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 
 @media (min-width: 768px) {
   .fake-banner {
