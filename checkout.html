@@ -98,6 +98,24 @@
               </form>
       </section>
 
+      <!--Seksjon for levering av bestilling-->
+      <section class="delivery-options">
+        <h2>3. Levering</h2>
+        <p>Leveringsvalg</p>
+        <!-- "Radio" for å legge til knapper -->
+        <form action="#" method="post">
+          <!-- Hjemlevering ekspress-->
+          <input type="radio" id="express-home" name="delivery" value="express-home" required>
+          <label for="express-home">Express Hjemlevering</label>
+          <!-- Ekspress pakke til utleveringssted -->
+           <input type="radio" id="express-pickup" name="delivery" value="express-pickup" required>
+           <label for="express-pickup">Express Pickup</label>
+           <!-- Standard hjemlevering -->
+            <input type="radio" id="standard-home" name="delivery" value="standard-home" required>
+            <label for="standard-home">Standard hjemlevering</label>
+        </form>
+      </section>
+
     
    </main>
 
