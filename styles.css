@@ -34,7 +34,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 /* Søkefelt */
@@ -47,16 +47,16 @@ header {
 .search-bar input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #000;
+  border-radius: 0px;
 }
 
 .search-bar button {
   padding: 10px;
   background-color: #fff;
   color: #000;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #000;
+  border-radius: 0px;
   cursor: pointer;
 }
 
@@ -100,7 +100,7 @@ nav ul li a i {
 }
 
 nav ul li.logo {
-  flex: 2; /* Logoen får mer plass */
+  flex: 2; 
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
