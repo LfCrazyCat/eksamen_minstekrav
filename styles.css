@@ -152,6 +152,12 @@ footer {
   gap: 5px;
 }
 
+/* Style for product.html filen */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 
 @media (min-width: 768px) {
