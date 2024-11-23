@@ -85,6 +85,27 @@ nav ul li {
   border-radius: 5px;
 }
 
+/* Style for seksjon for populære produckter */
+.popular-products .filter-button {
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
 
 
 @media (min-width: 768px) {
