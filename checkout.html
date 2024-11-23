@@ -43,7 +43,7 @@
      <section class="shopping-bag">
       <h2>1. SHOPPINGBAGGEN DIN</h2>
       <ul>
-        
+
         <!-- Produkt i handlekurv ett -->
         <li class="product-card">
           <img src="#" alt="Produkt i handlekurv ett">
@@ -67,9 +67,36 @@
           <p>Kr 1999</p>
           <p>Farge: beige</p>
          </li>
-
       </ul>
      </section>
+
+     <!-- Seksjonen for personopplysninger til kunden -->
+      <section class="personal-info">
+        <h2>2. Dine opplysninger</h2>
+        <!-- For skjema, som fylles ut av kunden -->
+         <form action="#" method="post">
+          <p>Leveringsadresse</p>
+          <!-- Fornavn -->
+          <label for="first-name">Fornavn*</label>
+          <input type="text" id="first-name" required>
+          <!-- Etternavn -->
+           <label for="last-name">Etternavn*</label>
+           <input type="text" id="last-name" required>
+           <!-- Gateadresse -->
+            <label for="street-address">Gateadresse*</label>
+            <input type="text" id="street-address" required>
+            <!-- Postnummer -->
+             <label for="postal-code">Postnummer*</label>
+             <input type="text" id="postal-code" required>
+             <!-- Postnummer som på bilde, men regner med at det skal være poststed -->
+              <label for="city">Poststed*</label>
+              <input type="text" id="city" required>
+              <!-- Knapp for å lagre -->
+               <button type="submit">Lagre</button>
+               <!-- Knapp for å avbryte seksjonen-->
+                <button type="reset">Avbryt</button>
+              </form>
+      </section>
 
     
    </main>
