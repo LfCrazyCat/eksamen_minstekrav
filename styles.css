@@ -1,0 +1,21 @@
+
+@media (min-width: 768px) {
+  .fake-banner {
+      text-align: left;
+  }
+
+  .product-grid, .category-grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+  }
+
+  .product-card, .category-card {
+      flex: 1 1 calc(33.33% - 20px);
+      box-sizing: border-box;
+  }
+
+  .review-card {
+      flex-direction: row;
+  }
+}
