@@ -281,19 +281,52 @@ footer {
 
 
 /* Style for product.html filen */
+
+/*Style for bredcrumb */
+.breadcrumb {
+  font-size: 14px; 
+  color: #333; 
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  font-family: Arial, sans-serif; 
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0f0c0c; 
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb strong {
+  font-weight: bold;
+  color: #000; 
+}
+
+.breadcrumb > :not(:last-child)::after {
+  content: '>';
+  margin: 0 5px;
+  color: #666; 
+}
+
+
 .product-details {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
+  align-items: flex-start;
 }
 /* Hovedbilde for produktet */
 .product-images .main-image {
-  max-width: 100%;
-  border: 2px solid #fff;
+  max-width: 100%; 
+  height: auto;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 .main-image {
@@ -305,7 +338,7 @@ footer {
 .product-images {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -321,14 +354,14 @@ footer {
 .thumbnail-images {
   display: flex;
   flex-direction: column; 
-  gap: 10px;
-  align-items: center
+  gap: 20px;
+  align-items: center;
 }
 
 .thumbnail-images img {
   max-width: 100%; 
-  border: 1px solid #fff;
-  padding: 5px;
+  height: auto;
+  border: 2px solid #ccc;
   border-radius: 5px;
 }
 
@@ -339,13 +372,13 @@ footer {
 }
 
 .product-info h1 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 /* Style for pris */
 .product-info .price {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
   color: #000;
   margin: 10px 0;
@@ -393,6 +426,7 @@ footer {
 .product-card img {
   max-width: 100%; 
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .product-card h3, .product-card .price {
   display: inline-block; 
@@ -443,6 +477,80 @@ footer {
 
 
 /*Style for Checkout.html filen */
+
+.shopping-bag {
+  margin: 20px 0;
+}
+
+.shopping-bag h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shopping-bag ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-card .price {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Seksjon: Kundens opplysninger */
+.personal-info {
+  margin-top: 20px;
+}
+
+.personal-info form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.personal-info form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.personal-info form button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.personal-info form button[type="reset"] {
+  background-color: #ccc;
+}
+
 .shopping-bag .product-card {
   display: flex;
   flex-direction: column;
