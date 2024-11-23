@@ -133,6 +133,25 @@ nav ul li {
   border-radius: 5px;
 }
 
+/* Style for footer-delen */
+footer {
+  background-color: #f4f4f4;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 
 
 @media (min-width: 768px) {
