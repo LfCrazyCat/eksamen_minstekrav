@@ -72,7 +72,7 @@
 
      <!-- Seksjonen for personopplysninger til kunden -->
       <section class="personal-info">
-        <h2>2. Dine opplysninger</h2>
+        <h2>2. DINE OPPLYSNINGER</h2>
         <!-- For skjema, som fylles ut av kunden -->
          <form action="#" method="post">
           <p>Leveringsadresse</p>
@@ -100,8 +100,8 @@
 
       <!--Seksjon for levering av bestilling-->
       <section class="delivery-options">
-        <h2>3. Levering</h2>
-        <p>Leveringsvalg</p>
+        <h2>3. LEVERING</h2>
+        <p>LEVERINGSVALG</p>
         <!-- "Radio" for å legge til knapper -->
         <form action="#" method="post">
           <!-- Hjemlevering ekspress-->
@@ -115,6 +115,39 @@
             <label for="standard-home">Standard hjemlevering</label>
         </form>
       </section>
+
+      <!-- Seksjon for betalingsvalg/opplysninger -->
+       <section class="payment">
+        <h2>4. BETALING</h2>
+        <p>BETAL MED KORT</p>
+        <form action="#" method="post">
+          <!-- Kortnummer for kort-->
+          <label for="card-number">Kortnummer</label>
+          <input type="text" id="card-number" name="card-number" required pattern="\d{16}" placeholder="1234 5678 9123 4567">
+          <!-- Utløpsdato for kort-->
+           <label for="expiry-date">Utløpsdato</label>
+           <input type="month" id="expiry-date" name="expiry-date" required>
+           <!-- CVC kode -->
+            <label for="cvc">CVC/CVV</label>
+            <input type="number" id="cvc" name="cvc" required pattern="\d{3}" placeholder="CVC/CVV">
+            <!-- Sum for total beløp med fullfør-knapp  -->
+             <p>Å betale inkl. mva. 1199 kr</p>
+             <button type="submit">Fullfør kjøp</button>
+             <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+              Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det 
+            foreligger uriktige eller ufullstendige opplysninger.</p>
+             <!-- BYTT UT DIV -->
+              <div class="consent">
+                <!-- Nyhetsbrev -->
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Ja takk! Send nyhetsbrev til meg.</label><br>
+                <!-- Tekstmelding med tilbud og nyheter -->
+                <input type="checkbox" id="update-me" name="update-me">
+                <label for="update-me">Jeg ønsker å motta tekstmledinger med tilbud og nyheter.</label><br>
+              </div>
+
+        </form>
+       </section>
 
     
    </main>
