@@ -3,11 +3,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
   background-color: #fff;
   color:#000;
-  text-align: left;
 }
-
 
 a {
   text-decoration: none;
@@ -41,47 +40,35 @@ header {
 /* Søkefelt */
 .search-bar {
   display: flex;
-  align-items: center; 
-  gap: 2px; 
-}
-
-.search-bar form {
-  display: flex; 
-  align-items: center; 
-  gap: 0; 
-  margin: 0; 
+  gap: 5px;
+  align-items: center;
 }
 
 .search-bar input {
-  flex: 1; 
-  padding: 8px;
-  height: 35px; 
+  flex: 1;
+  padding: 10px;
   border: 1px solid #000;
-  border-radius: 0; 
-  box-sizing: border-box; 
+  border-radius: 0px;
 }
+/* 
+.search-bar form {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Mellomrom mellom input og knapp
+  
+  .search-bar button i {
+  font-size: 14px; /* Justerer størrelsen på søkeikonet */
 
-.search-bar button i {
-  font-size: 16px; 
-}
-
+*/
 
 .search-bar button {
-  width: 40px; 
-  height: 35px; 
-  padding: 0;
-  margin: 0; 
+  padding: 10px;
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
-  border-left: none; 
-  border-radius: 0; 
+  border-radius: 0px;
   cursor: pointer;
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
 }
-
 
 /* Style for navigasjonsmeny */
 nav ul {
@@ -583,19 +570,48 @@ footer {
 
 /*Style for Checkout.html filen */
 
-/* Shopping Bag */
+main, section {
+  text-align: left;
+}
+
+.shopping-bag {
+  margin: 20px 0;
+}
+
+.shopping-bag h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .shopping-bag ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+.shopping-bag .product-card img {
+  width: 100%; 
+  margin-bottom: 10px;
+}
+
+.shopping-bag .product-card {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shopping-bag .product-card h3, 
+.shopping-bag .product-card p {
+  margin: 5px 0;
+}
+
 
 .product-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
-  text-align: left;
   border: 1px solid #ccc;
   padding: 15px;
   margin-bottom: 20px;
@@ -607,29 +623,45 @@ footer {
   border-radius: 5px;
 }
 
-.product-card h3, 
-.product-card p {
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
   margin: 5px 0;
 }
 
-/* Kundens Opplysninger */
-.personal-info input,
-.delivery-options input,
-.payment input {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.product-card .price {
+  font-size: 16px;
+  margin: 5px 0;
 }
 
-label {
+/* Seksjon: Kundens opplysninger */
+.personal-info {
+  margin-top: 20px;
+}
+
+/* Seksjonen for Kundens Opplysninger */
+.personal-info form label,
+.delivery-options form label,
+.payment form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-button {
+.personal-info form input,
+.delivery-options form input,
+.payment form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.personal-info form button,
+.delivery-options form button,
+.payment form button {
   width: 100%;
   padding: 15px;
   margin-top: 15px;
@@ -639,22 +671,74 @@ button {
   cursor: pointer;
 }
 
-button[type="reset"] {
+.personal-info form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.personal-info form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.personal-info form button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.personal-info form button[type="reset"] {
   background-color: #ccc;
 }
 
-/* Levering */
+/* Seksjonen for Levering */
+.delivery-options {
+  margin-top: 20px;
+}
+
 .delivery-options form input[type="radio"] {
   margin-right: 10px;
 }
 
-fieldset.consent {
-  display: block;
-  margin-top: 20px;
-  font-size: 14px;
+.delivery-options form label {
+  margin-bottom: 15px;
 }
 
-/* Seksjon for Betaling */
+
+.shopping-bag .product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.personal-info label,
+.delivery-options label,
+.payment label {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Personlig informasjon, bestilling, levering, betlaing */
+.personal-info input,
+.delivery-options input,
+.payment input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Seksjonen for Betaling */
 .payment form {
   margin-top: 20px;
 }
@@ -663,24 +747,75 @@ fieldset.consent {
   margin-bottom: 20px;
 }
 
-/* Seksjonskiller */
+.payment form button {
+  margin-top: 20px;
+}
+
+/* Konsistens for alle Seksjoner */
+section {
+  margin-bottom: 30px;
+}
+
+fieldset.consent {
+  margin-top: 20px;
+}
+
+fieldset.consent label {
+  margin-bottom: 10px;
+}
+
+/* Ekstra mellomrom mellom seksjoner */
 .section-divider {
   margin: 30px 0;
   border: 1px solid #ddd;
 }
 
-/* @media for større skjermer */
-@media (min-width: 768px) {
-  .product-grid, .category-grid {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .product-card, .category-card {
-    flex: 1 1 calc(33.33% - 20px);
-    box-sizing: border-box;
-  }
+/* Overordnet venstrestilling */
+body {
+  text-align: left;
 }
+
+
+/* style for samtykke */
+fieldset.consent {
+  display: block; 
+  border: none; 
+  margin-top: 20px;
+  padding: 0;
+  font-size: 14px;
+  text-align: left; 
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000; 
+  text-align: left; 
+}
+
+label {
+  display: flex; 
+  align-items: center;
+  margin-bottom: 10px; 
+  gap: 10px; 
+  font-size: 14px;
+  color: #333; 
+  cursor: pointer; 
+  text-align: left; 
+}
+
+label input[type="checkbox"] {
+  margin: 0; 
+  flex-shrink: 0; 
+  width: 16px; 
+  height: 16px; 
+}
+
+input[type="checkbox"] {
+  position: relative; /* Ingen absolutt posisjonering */
+}
+
 
 /* For å skjule underoverskrift på index.html */
 .visually-hidden {
