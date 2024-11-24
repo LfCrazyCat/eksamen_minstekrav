@@ -199,8 +199,17 @@ nav ul li.logo a {
   border: 1px solid #000;
   background-color: transparent;
   padding: 5px 10px;
-  margin: 5px;
+  margin: 0px;
   cursor: pointer;
+  color: #000;
+  flex: 0;
+}
+
+.popular-products .filters {
+  display: flex; 
+  flex-wrap: nowrap; 
+  gap: 10px; 
+  justify-content: flex-start; 
 }
 
 /* Hovereffekt for filter-knapper */
@@ -490,22 +499,26 @@ footer {
 .product-card {
   display: flex;
   flex-direction: column; 
-  gap: 1px; 
-  text-align: left; 
-  position: relative; 
+  align-items: center; 
+  text-align: center; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  gap: 5px;
 }
 
 .product-card img {
   max-width: 100%;
   height: auto;
-  border-radius: 1px;
+  border-radius: 5px;
 }
 
-.product-card h3,
-.product-card .price { 
-  margin: 0; 
+/* Product name styling */
+.product-card h3 {
+  margin: 10px 0 0; 
+  font-size: 18px; 
+  color: #000;
 }
-
 .product-card .details {
   display: flex;
   justify-content: space-between;
@@ -521,13 +534,18 @@ footer {
 }
 
 .product-card .price {
+  margin: 5px 0 0; 
+  font-size: 16px;
+  color: #000;
+}
+  /*
   display: inline-block;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
   width: calc(100% - 10px); 
   text-align: right;
-  /*
+  
   width: calc(30%); 
   text-align: right;
   display: inline-block; */
