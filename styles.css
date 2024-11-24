@@ -467,7 +467,6 @@ footer {
   display: flex;
   flex-direction: column; 
   gap: 10px; 
-  text-align: left; 
   /* 
   text-align: left; 
   position: relative; */
@@ -479,8 +478,7 @@ footer {
 }
 
 .product-card h3,
-.product-card .price {
-  display: inline-block; 
+.product-card .price { 
   margin: 0; 
 }
 
@@ -493,17 +491,16 @@ footer {
 .product-card h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 0;
   /* 
   display: inline-block;
   font-size: 18px;
   margin: 0;
   width: calc(70% - 10px); */
 }
+
 .product-card .price {
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
   margin-left: auto;
   /*
   margin: 0;
