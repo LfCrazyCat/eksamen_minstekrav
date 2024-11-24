@@ -11,6 +11,7 @@
   <header>
     <!-- Søkefelt for nettsiden som skal være øverst på siden-->
      <section class="search-bar">
+      <h1 class="visually-hidden">Søk</h1> <!-- For å skjule underoverksrift -->
       <form action="search.html" method="get">
         <input type="text" name="search" id="search" placeholder="Søk her..." aria-label="Søkefelt for nettsiden">
         <button type="submit" aria-label="søk">
@@ -39,11 +40,14 @@
   <main class="product-page">
 
     <!-- Breadcrumb -->
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="breadcrumb">
       <a href="index.html">Hjem</a>
-      <span>Kategori</span>
+      <i class="fa-solid fa-angle-right"></i>
+      <a href="categories.html">Kategori</a>
+      <i class="fa-solid fa-angle-right"></i>
       <strong>Produktnavn</strong>
     </nav>
+
         <!-- Produktbilder -->
   <section class="product-details">
     <figure class="product-images">

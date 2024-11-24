@@ -8,7 +8,7 @@
    <!-- FontAwesome -->
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="home-page">
   <header>
     <!-- Søkefelt for nettsiden som skal være øverst på siden-->
      <section class="search-bar">
@@ -36,8 +36,21 @@
       <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
     </ul>
   </nav>
+
+    <!-- Breadcrumbs kommer her -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="index.html">Hjem</a>
+      <span aria-hidden="true">></span>
+      <a href="categories.html">Kategorier</a>
+      <span aria-hidden="true">></span>
+      <a href="current-category.html">Produktkategori</a>
+      <span aria-hidden="true">></span>
+      <span class="current" aria-current="page">Produktnavn</span>
+    </nav>
   <!-- Hovedinnholdet på siden er plassert under Main-->
   <main>
+
+
     <!-- Seksjonen som tar for seg den falske slideren -->
      <!-- Ønsker å gå for en høyere karakterkrav, derfor har jeg satt inn den falske slideren med en gang selv om resultatet vil se noe annerledes ut-->
      <section class="fake-banner">

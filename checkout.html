@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forside</title>
+  <title>Handlekurv</title>
   <link rel="stylesheet" href="styles.css">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome -->
 </head>
@@ -11,6 +11,7 @@
   <header>
     <!-- Søkefelt for nettsiden som skal være øverst på siden-->
      <section class="search-bar">
+      <h1 class="visually-hidden">Søk</h1> <!-- For å skjule underoverksrift -->
       <form action="search.html" method="get">
         <input type="text" name="search" id="search" placeholder="Søk her..." aria-label="Søkefelt for nettsiden">
         <button type="submit" aria-label="søk">
@@ -129,7 +130,8 @@
            <input type="month" id="expiry-date" name="expiry-date" required>
            <!-- CVC kode -->
             <label for="cvc">CVC/CVV</label>
-            <input type="number" id="cvc" name="cvc" required pattern="\d{3}" placeholder="CVC/CVV">
+            <input type="number" id="cvc" name="cvc" required placeholder="CVC/CVV">
+            
             <!-- Sum for total beløp med fullfør-knapp  -->
              <p>Å betale inkl. mva. 1199 kr</p>
              <button type="submit">Fullfør kjøp</button>
@@ -143,11 +145,11 @@
               <legend>Samtykke</legend>
               <label>
                 <input type="checkbox" id="newsletter" name="newsletter">
-                Ja takk! Send nyhetsbrev til meg.
+                Ja, jeg godtar vilkårene
               </label>
               <label>
                 <input type="checkbox" id="update-me" name="update-me">
-                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                Ja takk! Send nyhetsbrev til meg.
               </label>
             </fieldset>
 
