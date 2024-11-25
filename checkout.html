@@ -111,15 +111,29 @@
         <p>LEVERINGSVALG</p>
         <!-- "Radio" for å legge til knapper -->
         <form action="#" method="post">
-          <!-- Hjemlevering ekspress-->
-          <input type="radio" id="express-home" name="delivery" value="express-home" required>
-          <label for="express-home">Express Hjemlevering</label>
-          <!-- Ekspress pakke til utleveringssted -->
-           <input type="radio" id="express-pickup" name="delivery" value="express-pickup" required>
-           <label for="express-pickup">Express Pickup</label>
-           <!-- Standard hjemlevering -->
+          <ul>
+            <li>
+              <label>
+                <!-- Hjemlevering ekspress-->
+                <input type="radio" id="express-home" name="delivery" value="express-home" required>
+                Ekspress hjemlevering
+              </label>
+            </li>
+            <li>
+              <label>
+                <!-- Ekspress pakke til utleveringssted -->
+               <input type="radio" id="express-pickup" name="delivery" value="express-pickup" required>
+               Ekspress utleveringssted
+              </label>
+            </li>
+            <li>
+              <label>
+                <!-- Standard hjemlevering -->
             <input type="radio" id="standard-home" name="delivery" value="standard-home" required>
-            <label for="standard-home">Standard hjemlevering</label>
+            Standard hjemlevering
+              </label>
+            </li>
+          </ul>
         </form>
       </section>
 
