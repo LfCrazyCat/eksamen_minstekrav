@@ -915,6 +915,7 @@ button[type="reset"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
+  gap: 10px;
   padding: 0;
   margin: 0; 
 }
@@ -924,7 +925,6 @@ button[type="reset"] {
 .consent legend {
   font-weight: bold;
   font-size: 16px;
-  margin-bottom: 0;
 }
 
 /* Style for labels i checkbox */
@@ -932,10 +932,10 @@ button[type="reset"] {
 .consent label {
   display: flex;
   align-items: center; 
-  gap: 5px; 
+  gap: 10px; 
   font-size: 14px;
-  margin: 0;
-  width: auto;
+  width: 100%;
+  line-height: 1.5;
 }
 
 
