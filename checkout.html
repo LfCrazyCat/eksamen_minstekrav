@@ -147,7 +147,8 @@
           <input type="text" id="card-number" name="card-number" required pattern="\d{16}" placeholder="1234 5678 9123 4567">
           <!-- Utløpsdato for kort-->
            <label for="expiry-date">Utløpsdato</label>
-           <input type="month" id="expiry-date" name="expiry-date" required>
+           <input type="text" id="expiry-date" name="expiry-date" required placeholder="mm/dd/yyyy" 
+           pattern="(0[1-9]|1[0-2])/([0-2][0-9]|3[0-1])/\d{4}">
            <!-- CVC kode -->
             <label for="cvc">CVC/CVV</label>
             <input type="number" id="cvc" name="cvc" required placeholder="CVC/CVV">
@@ -155,10 +156,12 @@
             <!-- Sum for total beløp med fullfør-knapp  -->
              <p>Å betale inkl. mva. 1199 kr</p>
              <button type="submit">Fullfør kjøp</button>
-             <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+             <p class="confirmation-text">
+              Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
               Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det 
-            foreligger uriktige eller ufullstendige opplysninger.</p>
-
+            foreligger uriktige eller ufullstendige opplysninger.
+          </p>
+            
             
              <!-- Nyhetsbrev og oppdatering av tilbud samtykke   -->
              <fieldset class="consent">
