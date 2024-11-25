@@ -371,36 +371,36 @@ footer {
 
 /* Responsivt design for større skjermer */
 @media (min-width: 768px) {
-  /* Navigasjonsmeny horisontalt */
+
   nav ul {
-    flex-direction: row; /* Horisontal på større skjermer */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
   /* Popular products grid */
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* To produkter per rad */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Category grid */
   .category-grid {
-    grid-template-columns: repeat(2, 1fr); /* To kategorier per rad */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   /* Reviews */
   .review-card {
-    flex-direction: row; /* Horisontal layout */
+    flex-direction: row; 
     align-items: flex-start;
   }
 
   /* Footer */
   footer {
-    flex-direction: row; /* Plasser seksjoner horisontalt */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
   .footer-section ul {
-    flex-direction: row; /* Horisontalt layout */
+    flex-direction: row; 
   }
 }
 
@@ -711,12 +711,33 @@ footer {
 
 /* Shopping Bag */
 .shopping-bag ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shopping-bag h2 {
+  margin-bottom: 20px;
+}
+
+.shopping-bag li.product-card {
   display: flex;
   flex-direction: column;
-  gap: 0;
-  margin: 0;
-  list-style: none;
+  align-items: center; 
+  gap: 10px;
 }
+
+.shopping-bag li.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.shopping-bag li.product-card h3,
+.shopping-bag li.product-card p {
+  margin: 5px 0;
+}
+
+
 
 .product-card {
   display: flex;
@@ -736,10 +757,25 @@ footer {
   border-radius: 0;
 }
 
+
+.personal-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
 .product-card h3, 
 .product-card p {
   margin: 5px 0;
 }
+
+.personal-info input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 
 /* Kundens Opplysninger */
 .personal-info input,
@@ -750,6 +786,15 @@ footer {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+/* Personopplysninger */
+.personal-info {
+  margin-top: 40px;
+}
+
+.personal-info label {
+  font-weight: bold;
 }
 
 label {
@@ -783,20 +828,46 @@ fieldset.consent {
   font-size: 14px;
 }
 
+/* Betalingsseksjon */
+.payment {
+  margin-top: 40px;
+}
+
+
 /* Seksjon for Betaling */
 .payment form {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.delivery-options form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .payment form input {
-  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+
+
+
+
 
 /* Seksjonskiller */
 .section-divider {
   margin: 30px 0;
   border: 1px solid #ddd;
 }
+
+
+
+
+
 
 
 /* For å skjule underoverskrift på index.html */
@@ -813,36 +884,36 @@ fieldset.consent {
 }
 
 @media (min-width: 768px) {
-  /* Navigasjonsmeny horisontalt */
+ 
   nav ul {
-    flex-direction: row; /* Horisontal på større skjermer */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
   /* Popular products grid */
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* To produkter per rad */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   /* Category grid */
   .category-grid {
-    grid-template-columns: repeat(2, 1fr); /* To kategorier per rad */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   /* Reviews */
   .review-card {
-    flex-direction: row; /* Horisontal layout */
+    flex-direction: row; 
     align-items: flex-start;
   }
 
   /* Footer */
   footer {
-    flex-direction: row; /* Plasser seksjoner horisontalt */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
   .footer-section ul {
-    flex-direction: row; /* Horisontalt layout */
+    flex-direction: row; 
   }
 }
 
