@@ -851,3 +851,38 @@ input[type="checkbox"] {
       flex-direction: row;
   }
 }
+
+
+
+
+
+
+
+
+/* @media for større skjermer */
+@media (min-width: 768px) {
+  .product-grid, .category-grid {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .product-card, .category-card {
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
