@@ -865,9 +865,9 @@ button[type="reset"] {
 
 @media (min-width: 768px) {
   .delivery-options ul {
-    flex-direction: row; /* Sett leveringsalternativene på én linje */
-    flex-wrap: wrap; /* La dem brytes til ny linje ved behov */
-    gap: 20px; /* Øk avstand mellom alternativene */
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px; 
   }
 }
 
@@ -900,13 +900,13 @@ fieldset,
 
 @media (min-width: 768px) {
   fieldset.consent {
-    flex-direction: row; /* Sett checkboxene på en linje */
-    justify-content: space-between; /* Spre dem jevnt */
+    flex-direction: row; 
+    justify-content: space-between; 
   }
 
   fieldset.consent label {
-    width: auto; /* Tilpass bredden til innholdet */
-    flex: 1; /* Sørg for jevn fordeling */
+    width: auto; 
+    flex: 1; 
   }
 }
 
@@ -943,6 +943,14 @@ fieldset,
   font-size: 14px;
   color: #000;
   line-height: 1.5;
+}
+
+.payment .confirmation-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.5;
+  text-align: left; /* Juster teksten til venstre */
 }
 
 /* Style for fieldset/samtykke */
