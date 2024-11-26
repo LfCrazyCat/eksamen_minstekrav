@@ -802,6 +802,13 @@ li.product-card img {
   box-sizing: border-box;
 }
 
+/* teksten Leveringadresse - kan fjerne om jeg ikke tremger bold font  */
+.personal-info p {
+  font-weight: bold;
+  font-size: 14px; 
+  margin-bottom: 5px;
+}
+
 .personal-info label {
   font-weight: bold;
   margin-bottom: 5px;
@@ -827,39 +834,66 @@ button[type="reset"] {
 /* Levering */
 
 .delivery-options {
-  padding: 0; 
-  margin: 0; 
+  /* border: 1px solid #ddd; /* /* hvis jeg vil ha border */
+  border-radius: 5px;
+  padding: 20px; 
+  margin: 20px auto; 
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 500px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* /* hvis jeg vil ha box-shadow */
 }
+
+.delivery-options form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 .delivery-options ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+  padding: 5px;
+  margin: 5px;
+ /* display: flex;
   flex-direction: column; 
-  gap: 10px;
+  gap: 10px; */
+  
+}
+
+/* leveringsvalg teksten */
+.delivery-options p {
+  font-weight: bold;
+  font-size: 16px; 
+  margin-bottom: 0px; 
+  margin: 5px;
 }
 
 .delivery-options li {
   display: flex; 
   align-items: center;
-  margin: 0;
-
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .delivery-options label {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  white-space: nowrap;
+  /*gap: 10px;
+   width: 100%; */
 }
 
 .delivery-options input[type="radio"] {
   accent-color: black;
+  margin: 5px;
+  /*
+  margin-right: 10px; 
   cursor: pointer;
   margin: 0;
-  padding: 0;
+  padding: 0; */
    
 }
 
@@ -880,10 +914,10 @@ button[type="reset"] {
   margin: 20px auto; 
   max-width: 500px; 
   padding: 20px;  
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  /* border: 1px solid #ddd; /* /* hvis jeg vil ha border */
+  border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* /* hvis jeg vil ha box-shadow */
 }
 .payment h2 {
   font-size: 24px;
@@ -903,12 +937,6 @@ button[type="reset"] {
   margin-bottom: 5px;
 }
 
-.delivery-options form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .payment form input {
   width: 100%;
   padding: 10px;
@@ -918,6 +946,26 @@ button[type="reset"] {
   box-sizing: border-box;
 }
 
+.payment form input::placeholder { /* farge der kunde skriver inn */
+  color: #aaa;
+}
+
+.payment form button:hover { /* style for hover */
+  background-color: #333;
+}
+
+.payment form button { /* får en sterkere farge */
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
 .payment form input,
 .payment form button {
@@ -934,11 +982,11 @@ button[type="reset"] {
 }
 
 .payment .confirmation-text {
-  margin-top: 20px;
   font-size: 14px;
-  color: #000;
+  color: #555;
   line-height: 1.5;
-  text-align: left; 
+  margin-top: 20px;
+  text-align: left;
 }
 
 /* Style for fieldset/samtykke */
@@ -969,46 +1017,71 @@ fieldset.consent label {
   }
 }
 
-.payment fieldset,
-.consent {
+.payment fieldset.consent {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
+  flex-direction: column; /* mobilvisning */
   gap: 10px;
-  padding: 0;
-  margin: 0; 
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: flex-start; 
 }
 
+.payment fieldset.consent label span {
+  display: inline-block; /* Teksten er inline */
+  margin-left: 10px; /* Avstand fra checkbox til tekst */
+  vertical-align: middle; /* tekst vertikalt */
+}
+
+
+
+
 /* Style for legend i fieldset */
-.payment fieldset, 
-.consent legend {
+.payment fieldset.consent legend {
   font-weight: bold;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 /* Style for labels i checkbox */
-.payment fieldset, 
-.consent label {
+.payment fieldset.consent label {
   display: flex;
-  align-items: center; 
-  gap: 10px; 
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
-  width: 100%;
   line-height: 1.5;
+  width: 100%;
 }
 
-
-.payment fieldset,
-.consent input[type="checkbox"] {
-  margin: 0; 
-  padding: 0; 
+.payment fieldset.consent label input[type="checkbox"] {
+  margin: 0;
   accent-color: black; 
+  width: 20px; 
+  height: 20px;
+  vertical-align: middle; 
+}
+
+.payment fieldset.consent input[type="checkbox"] {
+  accent-color: black;
 }
 
 
 
 
+/* Mobilvennlig design */
+@media (max-width: 768px) {
+  .payment {
+    padding: 15px;
+  }
 
+  .payment form button {
+    font-size: 16px;
+  }
+
+  .payment fieldset.consent {
+    padding: 10px;
+  }
+}
 
 
 
