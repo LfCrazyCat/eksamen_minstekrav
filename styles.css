@@ -116,8 +116,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #555; 
-  border-color: #555;
+  background-color: #928d8d; 
+  border-color: #202020;
 }
 
 
@@ -1105,7 +1105,6 @@ fieldset.consent label {
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
